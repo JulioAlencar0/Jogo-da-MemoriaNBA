@@ -1,5 +1,4 @@
-// Lista dos 8 símbolos (um por par).
-// Para usar imagens depois, é só trocar aqui (e o que é mostrado em criarTabuleiro).
+// Lista das 8 imagens dos times
 const times = [
   { sigla: "LAL", imagem: "images/lal.svg" },
   { sigla: "BOS", imagem: "images/bos.svg" },
@@ -11,7 +10,7 @@ const times = [
   { sigla: "DEN", imagem: "images/den.svg" }
 ];
 
-// Elementos da página que vamos usar
+// Elementos da página 
 const tabuleiro = document.getElementById("tabuleiro");
 const mensagemVez = document.getElementById("mensagem-vez");
 const resultado = document.getElementById("resultado");
@@ -49,7 +48,7 @@ function criarTabuleiro() {
 
     carta.innerHTML =
       '<div class="interna">' +
-        '<div class="costas">  </div>' +
+        '<div class="costas"><img src="images/nba.svg" alt="Costa da carta"></div>' +
         '<div class="frente"><img src="' + time.imagem + '" alt="' + time.sigla + '"></div>' +
       '</div>';
 

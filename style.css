@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 20px;
-  background: #12172b;
+  background: #0b0a23;
   color: #ffffff;
   font-family: Arial, sans-serif;
   text-align: center;
@@ -24,7 +24,7 @@ h1 {
   padding: 10px;
   border: 3px solid #3a4166;
   border-radius: 10px;
-  background: #1c2340;
+  background: #1D428A;
   transition: border-color 0.3s, background 0.3s, transform 0.3s;
 }
 
@@ -37,10 +37,10 @@ h1 {
   font-weight: bold;
 }
 
-/* destaque do jogador que está na vez */
+/* Jogador ativo */
 .jogador.ativo {
-  border-color: #f58426;
-  background: #3a2a1c;
+  border-color: #fafafa;
+  background: #C8102E;
   transform: scale(1.08);
 }
 
@@ -61,7 +61,7 @@ h1 {
 
 .carta {
   aspect-ratio: 1 / 1;
-  perspective: 600px;   /* dá o efeito 3D ao virar */
+  perspective: 600px;  
   cursor: pointer;
 }
 
@@ -91,8 +91,13 @@ h1 {
 
 /* lado de baixo da carta (virada para baixo) */
 .costas {
-  background: #f58426;
+  background: #eceae9;
   font-size: 32px;
+}
+.costas img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
 }
 
 /* lado do símbolo (fica girado até a carta virar) */

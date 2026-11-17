@@ -1,14 +1,14 @@
 // Lista dos 8 símbolos (um por par).
 // Para usar imagens depois, é só trocar aqui (e o que é mostrado em criarTabuleiro).
 const times = [
-  { sigla: "LAL", cor: "#552583" },  // Lakers
-  { sigla: "BOS", cor: "#007a33" },  // Celtics
-  { sigla: "GSW", cor: "#1d428a" },  // Warriors
-  { sigla: "CHI", cor: "#ce1141" },  // Bulls
-  { sigla: "MIA", cor: "#98002e" },  // Heat
-  { sigla: "NYK", cor: "#006bb6" },  // Knicks
-  { sigla: "SAS", cor: "#5a5a5a" },  // Spurs
-  { sigla: "DEN", cor: "#0e2240" }   // Nuggets
+  { sigla: "LAL", imagem: "images/lal.svg" },
+  { sigla: "BOS", imagem: "images/bos.svg" },
+  { sigla: "GSW", imagem: "images/gsw.svg" },
+  { sigla: "CHI", imagem: "images/chi.svg" },
+  { sigla: "MIA", imagem: "images/mia.svg" },
+  { sigla: "NYK", imagem: "images/nyk.svg" },
+  { sigla: "SAS", imagem: "images/sas.svg" },
+  { sigla: "DEN", imagem: "images/den.svg" }
 ];
 
 // Elementos da página que vamos usar
@@ -49,8 +49,8 @@ function criarTabuleiro() {
 
     carta.innerHTML =
       '<div class="interna">' +
-        '<div class="costas">🏀</div>' +
-        '<div class="frente" style="background:' + time.cor + '">' + time.sigla + '</div>' +
+        '<div class="costas">  </div>' +
+        '<div class="frente"><img src="' + time.imagem + '" alt="' + time.sigla + '"></div>' +
       '</div>';
 
     // quando clicar na carta, chama virarCarta

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jogo da Memória - NBA</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Jogo da Memória - NBA</h1>
+
+  <!-- Placar dos dois jogadores -->
+  <div class="placar">
+    <div class="jogador" id="jogador1">
+      <div class="nome">Jogador 1</div>
+      <div class="pontos" id="pontos1">0</div>
+    </div>
+    <div class="jogador" id="jogador2">
+      <div class="nome">Jogador 2</div>
+      <div class="pontos" id="pontos2">0</div>
+    </div>
+  </div>
+
+  <!-- Mensagem de quem joga -->
+  <div id="mensagem-vez"></div>
+
+  <!-- As cartas são criadas pelo JavaScript aqui dentro -->
+  <div id="tabuleiro"></div>
+
+  <!-- Resultado final (começa escondido) -->
+  <div id="resultado" class="escondido">
+    <div id="texto-resultado"></div>
+    <button id="botao-reiniciar">Jogar novamente</button>
+  </div>
+
+  <!-- JavaScript (fica no final para a página já existir quando o código rodar) -->
+  <script src="script.js"></script>
+</body>
+</html>
